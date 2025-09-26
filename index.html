@@ -2,11 +2,85 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinnGo - Paikallisopas</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #555;
+        }
+        .main-app-section {
+            padding: 1.5rem;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .pro-app-section {
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+        .hidden-link {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>FinnGo - Verkkosivusto</h1>
-    <p>Tämä on sovelluksen FinnGo - Paikallisopas virallinen verkkosivusto. Täältä löydät myös sovelluksen app-ads.txt -tiedoston.</p>
-    <p><a href="app-ads.txt">Avaa app-ads.txt</a></p>
+    <div class="container">
+        <h1>FinnGo - Paikallisopas</h1>
+        <h2>Löydä ja jaa kiehtovia kohteita Suomessa.</h2>
+        
+        <div class="main-app-section">
+            <p><strong>FinnGo - Paikallisopas</strong> on ilmainen Android-sovellus, joka on suunniteltu auttamaan sinua löytämään ja merkitsemään ei-kaupallisia kohteita, kuten muistomerkkejä, rakennuksia ja luontokohteita.</p>
+            <p>Sovelluksen käyttö ei vaadi kirjautumista. Voit selata kohteita vapaasti ja nauttia löytämisen ilosta. Jos kuitenkin haluat antaa palautetta ja osallistua yhteisön kehittämiseen, voit helposti kirjautua sisään Google-tunnuksilla.</p>
+        </div>
+
+        <div class="pro-app-section">
+            <p>Haluatko luoda ja ylläpitää omia kohteita, jotka jaetaan kaikkien selattavaksi? Tutustu <strong>FinnGo - Build</strong> -sovellukseen, joka on saatavilla maksullisena Android-sovelluksena. Se tarjoaa edistyneet työkalut sisällön tuottamiseen ja ylläpitämiseen.</p>
+        </div>
+        
+        <footer>
+            <p>Kaikki sovellukset ovat saatavilla Google Play -kaupasta.</p>
+            <p class="hidden-link"><a href="app-ads.txt">app-ads.txt</a></p>
+            <p>Copyright © 2025 Brewing 3000</p>
+        </footer>
+    </div>
 </body>
 </html>
