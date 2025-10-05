@@ -7,7 +7,6 @@
 
 <!-- TÄMÄ ON UUSI META-TAG, JOKA OHJAA APP-ADS.TXT ROBOTIN OIKEIN -->
     <meta name="app-ads-txt" content="https://brewing3000-source.github.io/finngo-paikallisopas/app-ads.txt">
-    <!-- JATKA TÄSTÄ ALASPÄIN MUU KOODI -->
     
     <style>
         body {
@@ -51,6 +50,7 @@
             border: 2px solid #3498db;
             border-radius: 8px;
             margin-bottom: 2rem;
+            background-color: #ecf8ff; /* Kevyt taustaväri korostamaan */
         }
         .pro-app-section {
             padding-top: 1rem;
@@ -62,8 +62,24 @@
             font-size: 0.8rem;
             color: #95a5a6;
         }
+        .footer-links p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .hidden-link {
             display: none;
+        }
+        .feedback-notice {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -74,7 +90,8 @@
         
         <div class="main-app-section">
             <p><strong>FinnGo - Paikallisopas</strong> on ilmainen Android-sovellus, joka on suunniteltu auttamaan sinua löytämään ja merkitsemään ei-kaupallisia kohteita, kuten muistomerkkejä, rakennuksia ja luontokohteita.</p>
-            <p>Sovelluksen käyttö ei vaadi kirjautumista. Voit selata kohteita vapaasti ja nauttia löytämisen ilosta. Jos kuitenkin haluat antaa palautetta ja osallistua yhteisön kehittämiseen, voit helposti kirjautua sisään Google-tunnuksilla.</p>
+            <p>Sovelluksen peruskäyttö (kohteiden selaaminen) ei vaadi kirjautumista.</p>
+            <p class="feedback-notice">Palautetoiminto on käytettävissä ainoastaan Google-tunnuksilla kirjautuneille käyttäjille.</p>
         </div>
 
         <div class="pro-app-section">
@@ -82,8 +99,16 @@
         </div>
         
         <footer>
-            <p>Kaikki sovellukset ovat saatavilla Google Play -kaupasta.</p>
+            <div class="footer-links">
+                <p>
+                    <a href="https://brewing3000-source.github.io/finngo-paikallisopas/privacypolicy.html" target="_blank">Tietosuojakäytäntö</a>
+                </p>
+                <p>
+                    Tietojen poistopyynnöt: Voit pyytää henkilötietojesi poistamista lähettämällä sähköpostia tietosuojakäytännössä ilmoitettuun osoitteeseen.
+                </p>
+            </div>
             <p class="hidden-link"><a href="app-ads.txt">app-ads.txt</a></p>
+            <p>Kaikki sovellukset ovat saatavilla Google Play -kaupasta.</p>
             <p>Copyright © 2025 Brewing 3000</p>
         </footer>
     </div>
